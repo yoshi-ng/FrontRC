@@ -1,0 +1,33 @@
+.est-header {
+  height: 100px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.logo > img {
+  height: 100px;
+  width: auto;
+  margin: 0 30px;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  color: #2a282f;
+  position: sticky;
+  margin-left: 20%;
+}
+
+.usuario > img {
+  height: 30px;
+}
+
+.menu-desplegable > img {
+  height: 50px;
+}
+
+.barra-busqueda > img {
+  height: 28px;
+}
