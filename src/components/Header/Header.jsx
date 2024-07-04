@@ -11,10 +11,12 @@ function Header() {
     <>
       <div className="est-header">
         <div className="logo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="logo Residuo Creativo" />
+          <p>Residuo Creativo</p>
         </div>
         <div className="menu-desplegable">
           <img src={menu_hamburguesa} alt="menu desplegable" />
+          <p>Menú</p>
         </div>
         <div className="barra-busqueda">
           <img src={lupa} alt="lupa" />

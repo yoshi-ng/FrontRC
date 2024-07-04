@@ -1,15 +1,50 @@
 .est-header {
-  height: 100px;
+  height: 120px;
   width: auto;
   display: flex;
   align-items: center;
   border: 1px solid black;
 }
 
-.logo > img {
+.logo {
+  border: 1px solid black;
+  margin-left: 5px;
   height: 100px;
+}
+
+.logo > img {
+  height: 70px;
   width: auto;
   margin: 0 30px;
+}
+
+.logo > p {
+  font-family: var(--font-titulos);
+  font-size: 20px;
+  text-align: center;
+  height: 25px;
+  margin: 0;
+}
+
+.menu-desplegable {
+  border: 1px solid black;
+  height: 100px;
+  width: 200px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-desplegable > img {
+  height: 50px;
+}
+
+.menu-desplegable > p {
+  font-family: var(--font-header);
+  color: var(--color-5);
+  font-weight: 800;
 }
 
 .usuario {
@@ -22,10 +57,6 @@
 
 .usuario > img {
   height: 30px;
-}
-
-.menu-desplegable > img {
-  height: 50px;
 }
 
 .barra-busqueda > img {
