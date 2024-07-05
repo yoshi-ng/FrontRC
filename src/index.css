@@ -16,6 +16,12 @@
   --color-6: #ffedca;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -26,4 +32,12 @@ header {
 
 main {
   height: 200vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
