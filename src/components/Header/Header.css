@@ -1,15 +1,22 @@
-.est-header {
-  height: 120px;
-  width: auto;
+.container-header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  gap: 2%;
+  border-bottom: 30px solid var(--color-5);
 }
 
 .logo {
-  border: 1px solid black;
-  margin-left: 5px;
   height: 100px;
+  width: 15%;
+  margin-left: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo > img {
@@ -27,12 +34,10 @@
 }
 
 .menu-desplegable {
-  border: 1px solid black;
-  height: 100px;
-  width: 200px;
-  margin: 5px;
+  height: 60px;
+  width: 15%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -45,20 +50,51 @@
   font-family: var(--font-header);
   color: var(--color-5);
   font-weight: 800;
+  margin: 0 auto;
+}
+
+.barra-busqueda {
+  border: 1px solid var(--color-5);
+  border-radius: 20px;
+  height: 30px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.barra-busqueda > p {
+  font-family: var(--font-header);
+  margin: 0 auto;
+  line-height: 30px;
+  position: absolute; /* Siempre se mantendra al medio */
+}
+
+.lupa {
+  height: 30px;
+  margin-left: auto; /* Hara que siempre se posicione a la derecha a la misma distancia */
+  margin-right: 20px;
 }
 
 .usuario {
+  width: 30%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   color: #2a282f;
   position: sticky;
-  margin-left: 20%;
+  margin-right: 5px;
 }
 
 .usuario > img {
-  height: 30px;
+  height: 50px;
 }
 
-.barra-busqueda > img {
-  height: 28px;
+.saludo {
+  font-family: var(--font-header);
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 0;
 }

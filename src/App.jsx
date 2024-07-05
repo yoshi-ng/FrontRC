@@ -1,11 +1,14 @@
-import HeaderG5 from './components/Header/Header';
+import HeaderG5 from "./components/Header/Header";
 
 function App() {
   return (
     <>
-    <HeaderG5 />
+      <header>
+        <HeaderG5 emprendedor="Emprendedor!" />
+      </header>
+      <main></main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

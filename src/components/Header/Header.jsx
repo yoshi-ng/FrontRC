@@ -6,10 +6,10 @@ import menu_hamburguesa from "../assets/Icons/menu_hamburguesa.svg";
 import lupa from "../assets/Icons/lupa.svg";
 import logo from "../assets/Logo.svg";
 
-function Header() {
+function Header({ emprendedor }) {
   return (
     <>
-      <div className="est-header">
+      <div className="container-header">
         <div className="logo">
           <img src={logo} alt="logo Residuo Creativo" />
           <p>Residuo Creativo</p>
@@ -19,10 +19,17 @@ function Header() {
           <p>Menú</p>
         </div>
         <div className="barra-busqueda">
-          <img src={lupa} alt="lupa" />
+          <p>Hola, ¿Qué comprarás hoy?</p>
+          <img className="lupa" src={lupa} alt="lupa" />
         </div>
         <div className="usuario">
           <img src={usuario} alt="icono-usuario" />
+          <div className="saludo">
+            <p>!Hola {emprendedor} </p>
+            <br />
+            <p> Inicia sesion </p>
+            <p> o registrate </p>
+          </div>
         </div>
       </div>
     </>
