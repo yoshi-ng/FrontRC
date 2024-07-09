@@ -8,6 +8,8 @@ import {
   Grid,
 } from "@mui/material";
 
+import clp from "../Clp";
+
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -51,7 +53,7 @@ function Cards({ data, titulo }) {
                       width: "50%",
                     }}
                   >
-                    {producto.precio}
+                    {clp(producto.precio)}
                   </Typography>
                 </CardActions>
                 <Link to={`/producto/${producto.id}`}></Link>
