@@ -240,3 +240,20 @@ nav {
 .show_menu {
   left: 0;
 }
+
+.nav_busqueda > ul {
+  display: flex;
+}
+
+.resultado_busqueda {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-parrafos);
+  font-size: 12px;
+  gap: 20px;
+  top: 70px;
+  background-color: var(--background-text);
+  width: 80%;
+  height: auto;
+}

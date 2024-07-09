@@ -6,12 +6,17 @@ import menu from "../assets/Icons/menu_hamburguesa.svg";
 import lupa from "../assets/Icons/lupa.svg";
 import logo from "../assets/Logos/Logo_texto.svg";
 import close from "../assets/Icons/cerrar.png";
+import products from "../assets/all_product";
 
 function Header({ emprendedor, inicio, tienda, contacto }) {
+  const [filter, setFilter] = useState("");
   const [showMenu, setShowMenu] = useState(false);
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
   };
+  const filteredProducts = products.filter((product) =>
+    product.nombre.toLowerCase().includes(filter.toLowerCase())
+  );
   return (
     <header>
       <nav className="nav">
@@ -20,7 +25,6 @@ function Header({ emprendedor, inicio, tienda, contacto }) {
             <img className="logo" src={logo} alt="logo residuo creativo" />
           </Link>
         </div>
-
         <div className={`nav_menu ${showMenu ? "show_menu" : ""}`}>
           <ul className="nav_menu_list">
             <li className="nav_menu_item">
@@ -59,13 +63,20 @@ function Header({ emprendedor, inicio, tienda, contacto }) {
           <img src={menu} alt="icono para desplegar menu" />
           Menú
         </div>
-
         <div className="nav_busqueda">
           <input
             type="text"
             className="nav_busqueda_text"
             placeholder="Hola, ¿Qué comprarás hoy?"
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
           />
+
+          <ul className="resultado_busqueda">
+            {filteredProducts.map((product) => (
+              <li key={product.id}>{product.nombre}</li>
+            ))}
+          </ul>
 
           <div className="nav_busqueda_icon">
             <a href="#" src={lupa}>
