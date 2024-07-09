@@ -1,8 +1,12 @@
+header {
+  position: sticky;
+  top: 0;
+}
+
 nav {
   height: 120px;
   width: 100vw;
   display: flex;
-  position: fixed;
   border-bottom: 20px solid var(--color-naranja-icono);
   background-color: white;
 }
@@ -180,7 +184,7 @@ nav {
     max-width: 160px;
     min-width: 160px;
     height: 50%;
-    transition: left 0.8s;
+    transition: left 0.4s;
   }
   .nav_menu_list {
     flex-direction: column;
