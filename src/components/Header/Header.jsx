@@ -16,25 +16,39 @@ function Header({ emprendedor, inicio, tienda, contacto }) {
     <header>
       <nav className="nav">
         <div className="nav_logo">
-          <img src={logo} alt="logo residuo creativo" />
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <img className="logo" src={logo} alt="logo residuo creativo" />
+          </Link>
         </div>
 
         <div className={`nav_menu ${showMenu ? "show_menu" : ""}`}>
           <ul className="nav_menu_list">
             <li className="nav_menu_item">
-              <a href="#" className="nav_menu_link">
+              <Link
+                to="/"
+                style={{ textDecoration: "none" }}
+                className="nav_menu_link"
+              >
                 {inicio}
-              </a>
+              </Link>
             </li>
             <li className="nav_menu_item">
-              <a href="#" className="nav_menu_link">
+              <Link
+                to="/tiendas"
+                style={{ textDecoration: "none" }}
+                className="nav_menu_link"
+              >
                 {tienda}
-              </a>
+              </Link>
             </li>
             <li className="nav_menu_item">
-              <a href="#" className="nav_menu_link">
+              <Link
+                to="/contacto"
+                style={{ textDecoration: "none" }}
+                className="nav_menu_link"
+              >
                 {contacto}
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="nav_close" onClick={handleShowMenu}>
@@ -54,7 +68,9 @@ function Header({ emprendedor, inicio, tienda, contacto }) {
           />
 
           <div className="nav_busqueda_icon">
-            <img src={lupa} alt="icono de busqueda" />
+            <a href="#" src={lupa}>
+              <img className="lupa" src={lupa} alt="icono de busqueda" />
+            </a>
             <p>Buscar</p>
           </div>
         </div>
@@ -68,10 +84,18 @@ function Header({ emprendedor, inicio, tienda, contacto }) {
               <h2>Hola! {emprendedor}</h2>
             </div>
             <div className="nav_usuario_ingreso">
-              <a href="#">Inicia sesion</a>
+              <Link
+                Link
+                to="/inicio-de-sesion"
+                style={{ textDecoration: "none" }}
+              >
+                Inicia Sesion
+              </Link>
             </div>
             <div className="nav_usuario_registro">
-              <a href="#">Registrate</a>
+              <Link Link to="/registro" style={{ textDecoration: "none" }}>
+                Registrate
+              </Link>
             </div>
           </div>
         </div>

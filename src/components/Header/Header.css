@@ -15,7 +15,7 @@ nav {
   padding: 0 80px;
 }
 
-.nav_logo > img {
+.logo {
   max-height: 90px;
 }
 
@@ -109,7 +109,7 @@ nav {
   top: 65px;
 }
 
-.nav_busqueda_icon > img {
+.lupa {
   position: absolute;
   height: 30px;
 }
@@ -205,11 +205,15 @@ nav {
     top: 70%;
     left: 10%;
   }
-  .nav_busqueda_icon > img {
-    height: 40px;
+  .nav_busqueda_icon > a {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .lupa {
+    top: 20%;
+    height: 40px;
+
     margin-bottom: 15px;
   }
 }
@@ -224,8 +228,9 @@ nav {
     justify-content: center;
     align-items: center;
   }
-  .nav_busqueda_icon > img {
+  .lupa {
     right: 10%;
+    top: 35%;
   }
   .nav_busqueda_icon > p {
     display: none;
