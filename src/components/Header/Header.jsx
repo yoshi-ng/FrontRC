@@ -1,72 +1,78 @@
-/* Logo, menu desplegable, barra de busqueda, icono de usuario, bienvenida y opciones de inicio de sesion y registrarse (hasta la barra naranja inferior) */
-
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import usuario from "../assets/Icons/usuario.svg";
 import menu from "../assets/Icons/menu_hamburguesa.svg";
 import lupa from "../assets/Icons/lupa.svg";
-import logo from "../assets/Logo.svg";
+import logo from "../assets/Logos/Logo_texto.svg";
 import close from "../assets/Icons/cerrar.png";
 
 function Header({ emprendedor, inicio, tienda, contacto }) {
   const [showMenu, setShowMenu] = useState(false);
-
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <header className="header">
+    <header>
       <nav className="nav">
-        <div className="logo">
-          <div className="nav__logo">
-            <img src={logo} alt="logo Residuo Creativo" />
-          </div>
-          <div className="nav__marca">
-            <p>Residuo Creativo</p>
-          </div>
+        <div className="nav_logo">
+          <img src={logo} alt="logo residuo creativo" />
         </div>
 
-        {/* Operador Ternario */}
-        <div className={`nav__menu ${showMenu ? "show_menu" : ""}`}>
-          <ul className="nav__list">
-            <li className="nav__item">
-              <a href="#" className="nav__link">
+        <div className={`nav_menu ${showMenu ? "show_menu" : ""}`}>
+          <ul className="nav_menu_list">
+            <li className="nav_menu_item">
+              <a href="#" className="nav_menu_link">
                 {inicio}
               </a>
             </li>
-            <li className="nav__item">
-              <a href="#" className="nav__link">
+            <li className="nav_menu_item">
+              <a href="#" className="nav_menu_link">
                 {tienda}
               </a>
             </li>
-            <li className="nav__item">
-              <a href="#" className="nav__link">
+            <li className="nav_menu_item">
+              <a href="#" className="nav_menu_link">
                 {contacto}
               </a>
             </li>
           </ul>
-          <div className="nav__close" onClick={handleShowMenu}>
-            <img src={close} alt="boton cerrar menu" />
+          <div className="nav_close" onClick={handleShowMenu}>
+            <img src={close} alt="boton para cerrar el menu" />
           </div>
         </div>
-        <div className="nav__toggle" onClick={handleShowMenu}>
-          <img src={menu} alt="menu desplegable" />
+        <div className="nav_toggle" onClick={handleShowMenu}>
+          <img src={menu} alt="icono para desplegar menu" />
+          Menú
         </div>
 
-        <div className="barra-busqueda">
-          <p className="barra_texto">Hola, ¿Qué comprarás hoy?</p>
-          <a href="#">Buscar</a>
-          <img className="lupa" src={lupa} alt="lupa" />
-        </div>
-        <div className="usuario">
-          <div className="icon_usuario">
-            <img src={usuario} alt="icono-usuario" />
+        <div className="nav_busqueda">
+          <input
+            type="text"
+            className="nav_busqueda_text"
+            placeholder="Hola, ¿Qué comprarás hoy?"
+          />
+
+          <div className="nav_busqueda_icon">
+            <img src={lupa} alt="icono de busqueda" />
+            <p>Buscar</p>
           </div>
-          <div className="saludo">
-            <p>!Hola {emprendedor} </p>
-            <p> Inicia sesion </p>
-            <p> o registrate </p>
-            <a href="#">Cuenta</a>
+        </div>
+
+        <div className="nav_usuario">
+          <div className="nav_usuario_icon">
+            <img src={usuario} alt="icono usuario" />
+          </div>
+          <div className="nav_usuario_text">
+            <div className="nav_usuario_saludo">
+              <h2>Hola! {emprendedor}</h2>
+            </div>
+            <div className="nav_usuario_ingreso">
+              <a href="#">Inicia sesion</a>
+            </div>
+            <div className="nav_usuario_registro">
+              <a href="#">Registrate</a>
+            </div>
           </div>
         </div>
       </nav>
