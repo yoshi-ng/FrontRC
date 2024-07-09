@@ -51,7 +51,7 @@ function Cards({ data, titulo }) {
                       width: "50%",
                     }}
                   >
-                    {clp(producto.precio)}
+                    {producto.precio}
                   </Typography>
                 </CardActions>
                 <Link to={`/producto/${producto.id}`}></Link>

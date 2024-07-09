@@ -72,11 +72,11 @@ function Header({ emprendedor, inicio, tienda, contacto }) {
             onChange={(e) => setFilter(e.target.value)}
           />
 
-          <ul className="resultado_busqueda">
+          {/*           <ul className="resultado_busqueda">
             {filteredProducts.map((product) => (
               <li key={product.id}>{product.nombre}</li>
             ))}
-          </ul>
+          </ul> */}
 
           <div className="nav_busqueda_icon">
             <a href="#" src={lupa}>
