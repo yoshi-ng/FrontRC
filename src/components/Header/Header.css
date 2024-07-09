@@ -4,6 +4,7 @@ nav {
   display: flex;
   position: fixed;
   border-bottom: 20px solid var(--color-naranja-icono);
+  background-color: white;
 }
 
 .nav_logo {
