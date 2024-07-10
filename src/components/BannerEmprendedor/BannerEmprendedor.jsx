@@ -1,13 +1,14 @@
 import "./BannerEmprendedor.css";
+import fondo1 from "../assets/PerfilEmprendedores/fondo1.png";
 
-function BannerEmprendedor({ tittle, text, close, background }) {
+function BannerEmprendedor() {
   return (
     <div className="contenedor_banner">
-      <img src={background} alt="Background banner" />
+      <img src={fondo1} alt="Background banner" />
       <div className="contenido">
-        {tittle} <br />
-        {text} <br />
-        {close}
+        <p>"¡Hola, Emprendedor!"</p>
+        <p>"Cientos de compradores estan ansiosos por conocer tus productos"</p>
+        <p>"¡Empieza ya!"</p>
       </div>
     </div>
   );

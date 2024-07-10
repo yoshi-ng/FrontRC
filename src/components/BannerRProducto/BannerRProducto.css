@@ -1,0 +1,10 @@
+.emprendedor_registro_producto {
+  height: auto;
+  width: 100%;
+}
+
+.emprendedor_registro_producto > img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}

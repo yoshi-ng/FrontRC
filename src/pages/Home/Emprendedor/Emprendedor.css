@@ -13,21 +13,3 @@
   top: 70%;
   left: 50%;
 }
-
-.instrucciones_banner {
-  position: relative;
-  height: 50px;
-  background-color: var(--color-naranja-icono);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--font-color-claro);
-}
-
-.foto > img {
-  height: 40px;
-  position: absolute;
-  left: 20px;
-  top: 5px;
-  transform: translate(-50% 0);
-}

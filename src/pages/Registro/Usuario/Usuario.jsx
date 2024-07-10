@@ -1,34 +1,77 @@
-import "./Usuario.css";
-import ico_foto from "./assets/Icons/camara_user.svg";
-import punto from "./assets/punto.svg";
-import flecha_i from ".../assets/Icons/clip_l.svg";
-import flecha_d from ".../assets/Icons/clip_r.svg";
+import { useState } from "react";
+import axios from "axios";
 
-function Usuario(titulo, texto, texto_rc, numero, btn_g, btn_pp) {
+/* Header es el mismo que el general
+Body seccion para agregar foto de perfil(una foto por defecto y opcion de personalizar) y el form correspondiente para llenar todos los datos solicitados, boton guardar. 
+Footer es el mismo */
+
+const baseURL = "http://localhost:8080/api/producto/agregar";
+
+function Usuario() {
+  const [nombre, setNombre] = useState("");
+  const [descripcion, setDescripcion] = useState("");
+  const [precio, setPrecio] = useState(0);
+  const [stock, setStock] = useState(0);
+
+  const handleSubmit = () => {
+    const data = {
+      nombre: nombre,
+      descripcion: descripcion,
+      /*       imagen: "imagenDecoracion1", */
+      precio: precio,
+      stock: stock,
+    };
+    axios.post(baseURL, data).then((response) => {
+      console.log(response.data);
+    });
+  };
   return (
     <>
-      <section className="titulo">Información de tu tienda</section>
-      <div className="subir-foto">
-        <img src={ico_foto} alt="" />
-        <p>Foto tienda</p>
-      </div>
-      <section className="Nombre">Nombre</section>
-      <p>escoge un nombre adecuado para tu tienda</p>
-      <div className="Descripcion">Descripción</div>
-
-      <section>
-        <p>Métodos de pago</p>
-        <div className="mdp">
-          <img src="punto" alt="" />
+      <form
+        onSubmit={() => {
+          handleSubmit();
+        }}
+      >
+        <div style={{ marginTop: "200px" }}>
+          <input
+            name="nombre"
+            type="text"
+            value={nombre}
+            onChange={(e) => setNombre(e.target.value)}
+          />
+          {nombre}
         </div>
-      </section>
-
-      <section>CONTACTO</section>
-
-      <section>Catálogo de productos publicados</section>
-      <div className="catalogo">
-        <img src="{flecha-i}" alt="" />
-      </div>
+        <div>
+          <input
+            name="descripcion"
+            type="text"
+            value={descripcion}
+            onChange={(e) => setDescripcion(e.target.value)}
+          />
+          {descripcion}
+        </div>
+        <div>
+          <input
+            name="precio"
+            type="number"
+            value={precio}
+            onChange={(e) => setPrecio(e.target.value)}
+          />
+          {precio}
+        </div>
+        <div>
+          <input
+            name="stock"
+            type="number"
+            value={stock}
+            onChange={(e) => setStock(e.target.value)}
+          />
+          {stock}
+        </div>
+        <input type="submit" />
+      </form>
     </>
   );
 }
+
+export default Usuario;
