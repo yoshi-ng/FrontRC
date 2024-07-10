@@ -26,8 +26,9 @@
   color: var(--font-color-claro);
 }
 
-a {
+.a {
   color: var(--font-color-claro);
+  font-size: 14px;
 }
 .social {
   display: flex;

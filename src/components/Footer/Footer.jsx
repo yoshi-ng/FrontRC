@@ -1,10 +1,10 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import twitter from "../assets/Icons/twitter.png";
 import facebook from "../assets/Icons/facebook.png";
 import instagram from "../assets/Icons/instagram.png";
 
-function Footer() {
+function Footer({ nosotros, contacto, preguntas }) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -13,22 +13,36 @@ function Footer() {
         <div className="sb__footer-links">
           <div className="sb__footer-links-div">
             <h4>Acerca de Residuo Creativo</h4>
-            <a href="#">
-              <p>¿Quiénes somos?</p>
-            </a>
+            <Link
+              to="/nosotros"
+              style={{ textDecoration: "none" }}
+              className="a"
+            >
+              {nosotros}
+            </Link>
           </div>
           <div className="sb__footer-links-div">
             <h4>¿Necesitas ayuda?</h4>
-            <a href="#">
-              <p>Centro de ayuda</p>
-            </a>
-            <a href="#">
-              <p>Preguntas frecuentes</p>
-            </a>
+
+            <Link
+              to="/contacto"
+              style={{ textDecoration: "none" }}
+              className="a"
+            >
+              {contacto}
+            </Link>
+
+            <Link
+              to="/preguntas-frecuentes"
+              style={{ textDecoration: "none" }}
+              className="a"
+            >
+              {preguntas}
+            </Link>
           </div>
           <div className="sb__footer-links-div">
             <h4>Medios de pago</h4>
-            <a href="#">
+            <a className="a" href="#">
               <p>Revisa los medios de pago disponibles</p>
             </a>
           </div>

@@ -1,7 +1,7 @@
 /* contenedor principal */
 .Preguntas-contenedor {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 10px auto;
   padding: 20px;
   background-color: var(--background-text);
   border-radius: 8px;
@@ -11,7 +11,7 @@
 .Preguntas-titulo {
   font-family: var(--font-titulos);
   font-size: 38px;
-  color: #ff6700;
+  color: var(--font-color-oscuro);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -23,11 +23,12 @@
 /*cada pregunta*/
 .Preguntas-pregunta {
   font-family: var(--font-titulos);
-  font-size: 28px;
-  color: #ff6700;
+  font-size: 16px;
+  color: var(--color-naranja-icono);
+  font-weight: 800;
   cursor: pointer;
   padding: 10px;
-  background-color: #e9ecef;
+  background-color: var(--font-color-claro);
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
@@ -39,11 +40,11 @@
 
 /* cada respuesta desplegable */
 .Preguntas-respuesta {
-  font-family: var(--font-parrafos);
-  font-size: 16px;
-  color: #333;
+  font-family: var(--font-titulos);
+  font-size: 14px;
+  color: var(--font-color-oscuro);
   padding: 10px;
-  background-color: #f1f1f1;
+  background-color: var(--font-color-claro);
   border-radius: 4px;
   margin-top: 5px;
 }

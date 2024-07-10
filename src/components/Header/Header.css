@@ -255,11 +255,19 @@ nav {
   position: absolute;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
   font-family: var(--font-parrafos);
-  font-size: 12px;
-  gap: 20px;
+  color: var(--font-color-oscuro);
+  font-size: 14px;
+  margin: 5px 0;
+  gap: 30px;
   top: 70px;
-  background-color: var(--background-text);
-  width: 80%;
+  width: 90%;
   height: auto;
+  box-shadow: 1px 1px 4px var(--font-color-oscuro);
+}
+
+.resultado_busqueda > li {
+  margin-top: 5px;
+  padding: 2px 20px;
 }

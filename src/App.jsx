@@ -9,6 +9,7 @@ import InicioSesion from "./pages/Home/Emprendedor/Emprendedor";
 import Registro from "./pages/Registro/Usuario/Usuario";
 import Producto from "./pages/Productos/Productos";
 import Preguntas from "./pages/Home/PreguntasFrecuentes/Preguntas";
+import Contacto from "./pages/Home/Contacto/Contacto";
 
 function App() {
   return (
@@ -26,10 +27,17 @@ function App() {
         <Route path="/inicio-de-sesion" element={<InicioSesion />}></Route>
         <Route path="/registro" element={<Registro />}></Route>
         <Route path="/preguntas-frecuentes" element={<Preguntas />}></Route>
+        <Route path="/contacto" element={<Contacto />}></Route>
+
         <Route path="/producto/:id" element={<Producto />} />
       </Routes>
       <main></main>
-      <Footer />
+      <Footer
+        contacto="Centro de ayuda"
+        nosotros="¿Quiénes somos?"
+        preguntas="Preguntas frecuentes
+        "
+      />
     </>
   );
 }
