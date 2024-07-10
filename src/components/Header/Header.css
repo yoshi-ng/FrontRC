@@ -1,11 +1,12 @@
 header {
   position: sticky;
   top: 0;
+  width: 100%;
 }
 
 nav {
   height: 120px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   border-bottom: 20px solid var(--color-naranja-icono);
   background-color: white;

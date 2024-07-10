@@ -17,7 +17,7 @@ function Usuario() {
     const data = {
       nombre: nombre,
       descripcion: descripcion,
-      imagen: "imagenDecoracion1",
+      /*       imagen: "imagenDecoracion1", */
       precio: precio,
       stock: stock,
     };

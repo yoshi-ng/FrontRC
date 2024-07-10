@@ -4,7 +4,6 @@ import axios from "axios";
 //Por el momento vamos a emular esta ruta global
 
 import Cards from "../../../components/Cards/Cards";
-import products from "../../../components/assets/all_product";
 
 const client = axios.create({
   baseURL: "http://localhost:8080/api/producto/lista",
@@ -23,8 +22,6 @@ function Tienda() {
   }, []);
   return (
     <>
-      <div className="tienda">Home Tienda Emprendedor</div>
-      {/*      <h1 className="prueba">{producto && producto.nombre}</h1> */}
       <Cards data={productos} titulo="Productos" />
     </>
   );

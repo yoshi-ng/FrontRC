@@ -7,6 +7,7 @@ import Tienda from "./pages/Home/Tienda/Tienda";
 import Contacto from "./pages/Home/QuienesSomos/Nosotros";
 import InicioSesion from "./pages/Home/Emprendedor/Emprendedor";
 import Registro from "./pages/Registro/Usuario/Usuario";
+import Producto from "./pages/Productos/Productos";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />}></Route>
         <Route path="/inicio-de-sesion" element={<InicioSesion />}></Route>
         <Route path="/registro" element={<Registro />}></Route>
+        <Route path="/producto/:id" element={<Producto />} />
       </Routes>
       <main></main>
       <Footer />
