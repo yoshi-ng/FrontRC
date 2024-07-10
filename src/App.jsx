@@ -1,11 +1,14 @@
-import HeaderG5 from './components/Header/Header';
+import React from "react";
+import HeaderG5 from "./components/Header/Header";
+import Preguntas from "./components/Home/PreguntasFrecuentes/Preguntas";
 
 function App() {
   return (
     <>
-    <HeaderG5 />
+      <HeaderG5 />
+      <Preguntas />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
