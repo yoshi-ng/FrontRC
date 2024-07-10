@@ -8,7 +8,7 @@ import Tienda from "./pages/Home/Tienda/Tienda";
 import Nosotros from "./pages/Home/QuienesSomos/Nosotros";
 import InicioSesion from "./pages/Home/InicioSesion/InicioSesion";
 import Registro from "./pages/Registro/Usuario/Usuario";
-import Producto from "./pages/Productos/Productos";
+import Producto from "./pages/ProductoVista/ProductoVista";
 import Preguntas from "./pages/Home/PreguntasFrecuentes/Preguntas";
 import Contacto from "./pages/Home/Contacto/Contacto";
 import Emprendedor from "./pages/Home/Emprendedor/Emprendedor";

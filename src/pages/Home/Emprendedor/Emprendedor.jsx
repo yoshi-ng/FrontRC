@@ -3,6 +3,7 @@ import fondo1 from "../../../components/assets/PerfilEmprendedores/fondo1.png";
 import icono from "../../../components/assets/PerfilEmprendedores/icono_mundo.svg";
 import Boton from "../../../components/Botones/Boton";
 import BannerEmprendedor from "../../../components/BannerEmprendedor/BannerEmprendedor";
+import BannerInfo from "../../../components/BannerInfo/BannerInfo";
 
 function Emprendedor() {
   return (
@@ -23,7 +24,6 @@ function Emprendedor() {
           </div>
         </div>
 
-        {/*         <Container> */}
         {/* Instrucciones */}
         <div className="emprendedor_instrucciones">
           <div className="instrucciones_banner">
@@ -66,6 +66,8 @@ function Emprendedor() {
             </ul>
           </div>
         </div>
+
+        {/* Banner registro de producto */}
         <div className="emprendedor_registro_producto">
           <div className="registro_producto_texto">
             {" "}
@@ -76,6 +78,8 @@ function Emprendedor() {
             <button>Empezar a vender</button>
           </div>
         </div>
+
+        {/* Imagenes informativas */}
         <div className="emprendedor_informativo">
           <div className="informativo_card card1">
             <img
@@ -90,7 +94,6 @@ circular"
           <div className="informativo_card card2"></div>
           <div className="informativo_card card3"></div>
         </div>
-        {/*         </Container> */}
       </div>
     </>
   );
