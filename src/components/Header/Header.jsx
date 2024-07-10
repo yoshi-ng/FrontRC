@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 import usuario from "../assets/Icons/usuario.svg";
 import menu from "../assets/Icons/menu_hamburguesa.svg";
@@ -18,8 +18,10 @@ function Header({ emprendedor, inicio, tienda, contacto }) {
     product.nombre.toLowerCase().includes(filter.toLowerCase())
   );
   const handleSelectFilterProduct = (id) => {
+    navigate(`/producto/${id}`);
     console.log(id);
   };
+  const navigate = useNavigate();
   return (
     <header>
       <nav className="nav">
