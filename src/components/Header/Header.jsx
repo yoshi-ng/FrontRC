@@ -8,7 +8,7 @@ import logo from "../assets/Logos/Logo_texto.svg";
 import close from "../assets/Icons/cerrar.png";
 import products from "../assets/all_product";
 
-function Header({ emprendedor, inicio, tienda, contacto }) {
+function Header({ emprendedor, inicio, tienda, nosotros }) {
   const [filter, setFilter] = useState("");
   const [showMenu, setShowMenu] = useState(false);
   const handleShowMenu = () => {
@@ -52,11 +52,11 @@ function Header({ emprendedor, inicio, tienda, contacto }) {
             </li>
             <li className="nav_menu_item">
               <Link
-                to="/contacto"
+                to="/nosotros"
                 style={{ textDecoration: "none" }}
                 className="nav_menu_link"
               >
-                {contacto}
+                {nosotros}
               </Link>
             </li>
           </ul>
