@@ -1,0 +1,14 @@
+.btn > button {
+  height: auto;
+  border-radius: 20px;
+  background-color: var(--color-boton);
+  border: none;
+  color: var(--font-color-claro);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
