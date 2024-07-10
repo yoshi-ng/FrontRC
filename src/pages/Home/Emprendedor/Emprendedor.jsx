@@ -1,27 +1,35 @@
-/* Header es el mismo, solo se personaliza el saludo con el nombre del usuario que ingresa 
-Body inlcuye una presentacion general, secciones informativas, y un boton que te lleva a publicar un producto nuevo
-Footer es el mismo, sin cambios*/
-import React from "react";
+import "./Emprendedor.css";
+import fondo1 from "../../../components/assets/PerfilEmprendedores/fondo1.png";
+import icono from "../../../components/assets/PerfilEmprendedores/icono_mundo.svg";
+import Boton from "../../../components/Botones/Boton";
+import BannerEmprendedor from "../../../components/BannerEmprendedor/BannerEmprendedor";
 
 function Emprendedor() {
   return (
     <>
       <div className="pagina_inicio_emprendedor">
+        {/* Banner principal */}
         <div className="emprendedor_tienda">
-          <div className="tienda_texto">
-            <p>¡Hola, Emprendedor!</p>
-            <p>
-              Cientos de compradores estan ansiosos por conocer tus productos
-            </p>
-            <p>¡Empieza ya!</p>
-          </div>
-          <div className="btn btn_tienda">
-            <button>Abrir mi tienda</button>
+          <BannerEmprendedor
+            tittle={"¡Hola, Emprendedor!"}
+            text={
+              "Cientos de compradores estan ansiosos por conocer tus productos"
+            }
+            close={"¡Empieza ya!"}
+            background={fondo1}
+          />
+          <div className="btn_tienda">
+            <Boton text="Abrir mi tienda" />
           </div>
         </div>
+
+        {/*         <Container> */}
+        {/* Instrucciones */}
         <div className="emprendedor_instrucciones">
           <div className="instrucciones_banner">
-            <div className="foto"></div>
+            <div className="foto">
+              <img src={icono} alt="comprometidos con el mundo" />
+            </div>
             <div className="texto">
               <h2>
                 Residuo Creativo está comprometido con la ley de reciclaje
@@ -82,6 +90,7 @@ circular"
           <div className="informativo_card card2"></div>
           <div className="informativo_card card3"></div>
         </div>
+        {/*         </Container> */}
       </div>
     </>
   );
