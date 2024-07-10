@@ -1,21 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 :root {
-  --font-titulos: "Style Script";
-  --font-subtitulos: "Inria Sans";
+  --font-logo: "Style Script";
+  --font-titulos: "Inria Sans";
   --font-parrafos: "Inika";
-  --font-header: "Inria Serif";
-  --color-1: #264309;
-  --color-2: #4B9600;
-  --color-3: #C0C400;
-  --color-4: #F9B229;
-  --color-5: #FA8F21;
-  --color-6: #FFEDCA;
+  --font-color-claro: #f1e8d7;
+  --font-color-oscuro: #264309;
+  --color-boton: #009245;
+  --color-naranja-icono: #fa8f21;
+  --color-verde-icono: #7cbf39;
+  --backgound-footer: #264309;
+  --background-text: #fa8f2180; /* El 80 indica 50% de transparencia */
 }
 
-html{
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
