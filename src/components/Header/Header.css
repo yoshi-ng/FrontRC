@@ -249,6 +249,7 @@ nav {
 
 .nav_busqueda > ul {
   display: flex;
+  margin: 8px 0;
 }
 
 .resultado_busqueda {
@@ -259,8 +260,6 @@ nav {
   font-family: var(--font-parrafos);
   color: var(--font-color-oscuro);
   font-size: 14px;
-  margin: 5px 0;
-  gap: 30px;
   top: 70px;
   width: 90%;
   height: auto;
@@ -268,6 +267,7 @@ nav {
 }
 
 .resultado_busqueda > li {
-  margin-top: 5px;
+  border-bottom: ;
   padding: 2px 20px;
+  margin: 5px 0;
 }
