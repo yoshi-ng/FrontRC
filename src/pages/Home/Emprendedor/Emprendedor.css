@@ -4,12 +4,21 @@
   margin: auto;
 }
 
-.emprendedor_tienda {
+.emprendedor_tienda,
+.registro_producto,
+.banner_informativo,
+.emprendedor_informativo {
   position: relative;
 }
 
 .btn_tienda {
   position: absolute;
   top: 70%;
+  left: 50%;
+}
+
+.btn_producto {
+  position: absolute;
+  bottom: 10%;
   left: 50%;
 }

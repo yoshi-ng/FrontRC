@@ -1,0 +1,18 @@
+.formulario {
+  border: 1px solid black;
+  height: 62vh;
+}
+
+.inputNombre,
+.inputDescripcion,
+.inputPrecio,
+.inputStock {
+  border: 1px solid green;
+  margin: 10px;
+}
+
+.input {
+  border-radius: 20px;
+  border: 1px solid orange;
+  margin: 10px;
+}

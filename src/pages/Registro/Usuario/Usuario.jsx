@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import "./Usuario.css";
 
 /* Header es el mismo que el general
 Body seccion para agregar foto de perfil(una foto por defecto y opcion de personalizar) y el form correspondiente para llenar todos los datos solicitados, boton guardar. 
@@ -28,12 +29,15 @@ function Usuario() {
   return (
     <>
       <form
+        className="formulario"
         onSubmit={() => {
           handleSubmit();
         }}
       >
-        <div style={{ marginTop: "200px" }}>
+        <div className="inputNombre" style={{ marginTop: "100px" }}>
+          <p>Nombre Producto</p>
           <input
+            className="input"
             name="nombre"
             type="text"
             value={nombre}
@@ -41,8 +45,10 @@ function Usuario() {
           />
           {nombre}
         </div>
-        <div>
+        <div className="inputDescripcion">
+          <p>Desripcion del producto</p>
           <input
+            className="input"
             name="descripcion"
             type="text"
             value={descripcion}
@@ -50,8 +56,10 @@ function Usuario() {
           />
           {descripcion}
         </div>
-        <div>
+        <div className="inputPrecio">
+          <p>Precio</p>
           <input
+            className="input"
             name="precio"
             type="number"
             value={precio}
@@ -59,8 +67,10 @@ function Usuario() {
           />
           {precio}
         </div>
-        <div>
+        <div className="inputStock">
+          <p>Stock</p>
           <input
+            className="input"
             name="stock"
             type="number"
             value={stock}
@@ -68,7 +78,7 @@ function Usuario() {
           />
           {stock}
         </div>
-        <input type="submit" />
+        <input className="btn_submit" type="submit" />
       </form>
     </>
   );

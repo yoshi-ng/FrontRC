@@ -6,8 +6,10 @@ function BannerRProducto() {
     <div className="emprendedor_registro_producto">
       <img src={fondo2} alt="fondo banner registro de producto" />
       <div className="registro_producto_texto">
-        Si eres un emprendedor comprometido con el medioambiente y quieres
-        vender productos ecológicos en pocos pasos, este es tu lugar
+        <p>
+          Si eres un emprendedor comprometido con el medioambiente y quieres
+          vender productos ecológicos en pocos pasos, este es tu lugar.
+        </p>
       </div>
     </div>
   );

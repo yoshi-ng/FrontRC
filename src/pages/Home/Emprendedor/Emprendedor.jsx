@@ -4,6 +4,7 @@ import Boton from "../../../components/Botones/Boton";
 import BannerEmprendedor from "../../../components/BannerEmprendedor/BannerEmprendedor";
 import BannerInfo from "../../../components/BannerInfo/BannerInfo";
 import BannerRProducto from "../../../components/BannerRProducto/BannerRProducto";
+import PropuestaValor from "../../../components/PropuestaValor/PropuestaValor";
 
 function Emprendedor() {
   return (
@@ -17,29 +18,22 @@ function Emprendedor() {
           </div>
         </div>
 
-        {/* Instrucciones */}
-        <BannerInfo />
-
-        {/* Banner registro de producto */}
-        <BannerRProducto />
-        <div className="btn_producto">
-          <button>Empezar a vender</button>
-        </div>
-
         {/* Imagenes informativas */}
         <div className="emprendedor_informativo">
-          <div className="informativo_card card1">
-            <img
-              className="card_imagen"
-              src=""
-              alt="icono apoya a la economia circular"
-              title="Apoyo a la economía
-circular"
-            />
-            <div className="card_content"></div>
+          <PropuestaValor />
+        </div>
+
+        {/* Banner registro de producto */}
+        <div className="registro_producto">
+          <BannerRProducto />
+          <div className="btn btn_producto">
+            <button>Empezar a vender</button>
           </div>
-          <div className="informativo_card card2"></div>
-          <div className="informativo_card card3"></div>
+        </div>
+
+        {/* Instrucciones */}
+        <div className="banner_informativo">
+          <BannerInfo />
         </div>
       </div>
     </>

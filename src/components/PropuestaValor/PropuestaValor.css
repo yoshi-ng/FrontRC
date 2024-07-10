@@ -1,0 +1,50 @@
+.emprendedor_informativo {
+  height: auto;
+  width: 100%;
+  font-family: var(--font-titulos);
+  color: var(--font-color-oscuro);
+}
+
+.titulo_propuesta {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cards_informativos {
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.informativo_card {
+  height: 300px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.informativo_card > img {
+  height: 150px;
+}
+
+.card_tittle {
+  width: 80%;
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.card_content > p {
+  width: 90%;
+  text-align: center;
+  margin: 10px;
+  font-size: 16px;
+}
