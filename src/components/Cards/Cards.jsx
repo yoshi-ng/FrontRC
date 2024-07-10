@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import imagenes from "../assets/all_product";
+import sinImagen from "../assets/Productos/sin_imagen.png";
 
 import {
   Container,
@@ -16,12 +17,12 @@ import clp from "../Clp";
 function Cards({ data, titulo }) {
   const handleDivClick = (key) => {
     navigate(`/producto/${key}`);
-    const navigate = useNavigate();
   };
+  const navigate = useNavigate();
   return (
     <>
       <Container sx={{ my: "20px" }}>
-        <Typography variant="h1" sx={{ mt: "100px" }}>
+        <Typography variant="h1" sx={{ mt: "50px" }}>
           {titulo}
         </Typography>
         <Grid container spacing={2} sx={{ mb: "20px" }}>
@@ -41,7 +42,7 @@ function Cards({ data, titulo }) {
                     <CardMedia
                       component="img"
                       alt={producto.nombre}
-                      src={imagenes[index] && imagenes[index].imagen}
+                      src={imagenes[index] ? imagenes[index].imagen : sinImagen}
                     />
                     <CardContent>
                       <Typography variant="h6">{producto.nombre}</Typography>

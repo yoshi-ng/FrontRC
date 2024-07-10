@@ -17,6 +17,9 @@ function Header({ emprendedor, inicio, tienda, contacto }) {
   const filteredProducts = products.filter((product) =>
     product.nombre.toLowerCase().includes(filter.toLowerCase())
   );
+  const handleSelectFilterProduct = (id) => {
+    console.log(id);
+  };
   return (
     <header>
       <nav className="nav">
@@ -72,11 +75,19 @@ function Header({ emprendedor, inicio, tienda, contacto }) {
             onChange={(e) => setFilter(e.target.value)}
           />
 
-          {/*           <ul className="resultado_busqueda">
-            {filteredProducts.map((product) => (
-              <li key={product.id}>{product.nombre}</li>
-            ))}
-          </ul> */}
+          {filter && (
+            <ul className="resultado_busqueda">
+              {filteredProducts.map((product) => (
+                <li
+                  role="button"
+                  key={product.id}
+                  onClick={() => handleSelectFilterProduct(product.id)}
+                >
+                  {product.nombre}
+                </li>
+              ))}
+            </ul>
+          )}
 
           <div className="nav_busqueda_icon">
             <a href="#" src={lupa}>
@@ -95,16 +106,12 @@ function Header({ emprendedor, inicio, tienda, contacto }) {
               <h2>Hola! {emprendedor}</h2>
             </div>
             <div className="nav_usuario_ingreso">
-              <Link
-                Link
-                to="/inicio-de-sesion"
-                style={{ textDecoration: "none" }}
-              >
+              <Link to="/inicio-de-sesion" style={{ textDecoration: "none" }}>
                 Inicia Sesion
               </Link>
             </div>
             <div className="nav_usuario_registro">
-              <Link Link to="/registro" style={{ textDecoration: "none" }}>
+              <Link to="/registro" style={{ textDecoration: "none" }}>
                 Registrate
               </Link>
             </div>
