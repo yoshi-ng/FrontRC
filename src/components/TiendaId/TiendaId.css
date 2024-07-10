@@ -1,0 +1,73 @@
+.contenedor_item {
+  margin: 20px auto;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0 30px;
+}
+
+.contenedor_imagen {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor_imagen > img {
+  max-width: 100%;
+}
+
+.contenedor_texto {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo,
+.descripcion,
+.stock,
+.precio {
+  font-family: var(--font-parrafos);
+  font-weight: 500;
+  color: var(--font-color-oscuro);
+}
+
+.nombre {
+  font-family: var(--font-titulos);
+  color: var(--color-naranja-icono);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.detalle {
+  margin: 25px 0;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30%;
+}
+
+.titulo {
+  font-weight: 800;
+}
+
+.descripcion {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .nombre {
+    font-size: 16px;
+  }
+  .detalle > p {
+    font-size: 12px;
+  }
+}

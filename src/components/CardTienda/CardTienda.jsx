@@ -11,22 +11,20 @@ import {
   Grid,
 } from "@mui/material";
 
-import clp from "../Clp";
-
-function Cards({ data, titulo }) {
+function CardTienda({ data, titulo }) {
   const handleDivClick = (key) => {
-    navigate(`/producto/${key}`);
+    navigate(`/tienda/${key}`);
   };
   const navigate = useNavigate();
   return (
     <>
-      <Typography variant="h1" sx={{ mt: "50px", fontSize: "40px" }}>
+      <Typography variant="h1" sx={{ mt: "20px", fontSize: "40px" }}>
         {titulo}
       </Typography>
-      <Grid container spacing={2} sx={{ mt: "20px", mb: "20px" }}>
+      <Grid container spacing={2} sx={{ mt: "20px", mb: "20px", gap: "10%" }}>
         {/* Mapeo */}
         {data
-          ? data.map((producto, index) => (
+          ? data.map((tienda, index) => (
               <Grid
                 key={index}
                 item
@@ -34,29 +32,32 @@ function Cards({ data, titulo }) {
                 sm={6}
                 md={4}
                 lg={3}
-                onClick={() => handleDivClick(producto.id)} //Onclik va dentro del Grid para poder hacer clic en cualquier parte de la tarjeta, ademas dentro del grid container estamos haciendo el mapeo.
+                onClick={() => handleDivClick(tienda.id)} //Onclik va dentro del Grid para poder hacer clic en cualquier parte de la tarjeta, ademas dentro del grid container estamos haciendo el mapeo.
               >
                 <Card sx={{ cursor: "pointer" }}>
                   <CardMedia
                     component="img"
-                    alt={producto.nombre}
+                    alt={tienda.nombre}
                     src={imagenes[index] ? imagenes[index].imagen : sinImagen}
                   />
                   <CardContent>
-                    <Typography variant="h6">{producto.nombre}</Typography>
+                    <Typography variant="h6">{tienda.nombre}</Typography>
                   </CardContent>
                   <CardActions sx={{ px: "15px" }}>
                     <Typography
                       variant="h6"
                       sx={{
-                        textAlign: "right",
-                        width: "50%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        textAlign: "center",
+                        width: "90%",
                       }}
                     >
-                      {clp(producto.precio)}
+                      {tienda.descripcion}
                     </Typography>
                   </CardActions>
-                  <Link to={`/producto/${producto.id}`}></Link>
+                  <Link to={`/tienda/${tienda.id}`}></Link>
                 </Card>
               </Grid>
             ))
@@ -67,4 +68,4 @@ function Cards({ data, titulo }) {
   );
 }
 
-export default Cards;
+export default CardTienda;
