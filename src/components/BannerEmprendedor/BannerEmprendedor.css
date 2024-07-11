@@ -19,7 +19,7 @@
   color: var(--font-color-claro);
   -webkit-text-stroke: 1.4px var(--font-color-oscuro);
   font-weight: 800;
-  font-size: 25px;
+  font-size: 30px;
   letter-spacing: -1px;
   text-align: center;
 }

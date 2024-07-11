@@ -1,11 +1,18 @@
-.titulo {
-  color: black;
-  background-color: #ffffff;
+.formulario {
+  border: 1px solid black;
+  height: 62vh;
 }
 
-.container {
-  border-color: #000000;
+.inputNombre,
+.inputDescripcion,
+.inputPrecio,
+.inputStock {
+  border: 1px solid green;
+  margin: 10px;
 }
-.texto {
-  color: #535353;
+
+.input {
+  border-radius: 20px;
+  border: 1px solid orange;
+  margin: 10px;
 }

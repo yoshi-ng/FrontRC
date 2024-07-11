@@ -4,7 +4,10 @@
   margin: auto;
 }
 
-.emprendedor_tienda {
+.emprendedor_tienda,
+.registro_producto,
+.banner_informativo,
+.emprendedor_informativo {
   position: relative;
 }
 
@@ -14,20 +17,8 @@
   left: 50%;
 }
 
-.instrucciones_banner {
-  position: relative;
-  height: 50px;
-  background-color: var(--color-naranja-icono);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--font-color-claro);
-}
-
-.foto > img {
-  height: 40px;
+.btn_producto {
   position: absolute;
-  left: 20px;
-  top: 5px;
-  transform: translate(-50% 0);
+  bottom: 10%;
+  left: 50%;
 }
