@@ -1,0 +1,117 @@
+.Contenedor {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #4caf50, #2196f3);
+  font-family: "Arial", sans-serif;
+  opacity: 0.76;
+}
+
+.cuadro-inicio {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cuadro-inicio h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1b5e20;
+}
+
+.caja_input {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.caja_input input {
+  width: 100%;
+  padding: 10px 40px 10px 20px;
+  border: none;
+  border-bottom: 2px solid #4caf50;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.caja_input input:focus {
+  border-bottom-color: #2196f3;
+}
+
+.caja_input .icono {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4caf50;
+}
+
+.Olvido_contraseña {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #1b5e20;
+}
+
+.Olvido_contraseña label {
+  display: flex;
+  align-items: center;
+}
+
+.Olvido_contraseña input[type="checkbox"] {
+  margin-right: 5px;
+  accent-color: #4caf50;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+.Link-registro {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #1b5e20;
+}
+
+a {
+  color: #2196f3;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #1565c0;
+}
+
+/* Añadir un ícono de reciclaje */
+.cuadro-inicio::before {
+  content: "♻️";
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
