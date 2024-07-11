@@ -1,5 +1,5 @@
 .Contenedor {
-  margin: 0;
+  margin: 40px 0;
   padding: 0;
   box-sizing: border-box;
   display: flex;
@@ -8,7 +8,6 @@
   min-height: 100vh;
   background: linear-gradient(120deg, #4caf50, #2196f3);
   font-family: "Arial", sans-serif;
-  opacity: 0.76;
 }
 
 .cuadro-inicio {

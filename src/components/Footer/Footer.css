@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #3cb33c;
+  --color-primary: #009846;
   --color-secondary: #2196f3;
   --color-text: #333333;
   --color-text-light: #ffffff;
@@ -8,8 +8,12 @@
 }
 
 .footer {
-  background-color: var(--backgound-footer);
+  background-color: var(--color-primary);
   font-family: var(--font-titulos);
+}
+
+h4 {
+  color: #ffffff;
 }
 
 .sb__footer-links {
