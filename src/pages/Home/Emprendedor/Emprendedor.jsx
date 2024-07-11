@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Emprendedor.css";
 
 import Boton from "../../../components/Botones/Boton";
@@ -13,9 +14,13 @@ function Emprendedor() {
         {/* Banner principal */}
         <div className="emprendedor_tienda">
           <BannerEmprendedor />
-          <div className="btn_tienda">
+          <Link
+            to="/tienda/:id"
+            style={{ textDecoration: "none" }}
+            className="btn_tienda"
+          >
             <Boton text="Abrir mi tienda" />
-          </div>
+          </Link>
         </div>
 
         {/* Imagenes informativas */}
@@ -26,9 +31,14 @@ function Emprendedor() {
         {/* Banner registro de producto */}
         <div className="registro_producto">
           <BannerRProducto />
-          <div className="btn btn_producto">
+
+          <Link
+            className="btn btn_producto"
+            to="/registro-producto"
+            style={{ textDecoration: "none" }}
+          >
             <button>Empezar a vender</button>
-          </div>
+          </Link>
         </div>
 
         {/* Instrucciones */}

@@ -13,6 +13,7 @@ import Tienda from "./pages/TiendaVista/TiendaVista";
 import Preguntas from "./pages/Home/PreguntasFrecuentes/Preguntas";
 import Contacto from "./pages/Home/Contacto/Contacto";
 import Emprendedor from "./pages/Home/Emprendedor/Emprendedor";
+import RegistroProducto from "./pages/Registro/Producto/Producto";
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
             <Route path="/nosotros" element={<Nosotros />}></Route>
             <Route path="/inicio-de-sesion" element={<InicioSesion />}></Route>
             <Route path="/registro" element={<Registro />}></Route>
+            <Route
+              path="/registro-producto"
+              element={<RegistroProducto />}
+            ></Route>
             <Route path="/preguntas-frecuentes" element={<Preguntas />}></Route>
             <Route path="/contacto" element={<Contacto />}></Route>
             <Route path="/cuenta" element={<Emprendedor />}></Route>
