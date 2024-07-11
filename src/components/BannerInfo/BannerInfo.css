@@ -1,0 +1,65 @@
+.emprendedor_instrucciones {
+  height: auto;
+  width: 100%;
+  background-color: var(--background-text);
+  font-family: var(--font-titulos);
+}
+
+.instrucciones_banner {
+  position: relative;
+  height: 60px;
+  background-color: var(--color-naranja-icono);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color-claro);
+}
+
+.instrucciones_foto > img {
+  height: 40px;
+  position: relative;
+}
+
+.instrucciones_texto {
+  position: relative;
+  margin: 0 50px;
+}
+
+.instrucciones_texto > h2 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.instrucciones_titulo,
+.instrucciones_contenido {
+  color: var(--font-color-oscuro);
+  font-weight: 300;
+}
+
+.instrucciones_contenido {
+  display: flex;
+  margin: 0 50px;
+  padding-bottom: 50px;
+}
+
+.instrucciones_titulo {
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.instrucciones_titulo > h2 {
+  font-size: 22px;
+}
+
+.imagen_izquierda > img {
+  position: relative;
+  height: 250px;
+  top: 10px;
+}
+
+.lista_item {
+  font-size: 16px;
+  margin: 20px;
+}

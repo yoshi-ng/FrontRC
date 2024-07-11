@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import "./Productos.css";
-import data from "../../components/assets/all_product";
-import clp from "../../components/Clp";
+import data from "../assets/all_product";
+import clp from "../Clp";
 
-function Productos() {
-  const { id } = useParams();
+function Productos({ id }) {
   const [itemProducto, setItemProducto] = useState({ id });
   useEffect(() => {
     const items = data.find((prod) => prod.id == id);

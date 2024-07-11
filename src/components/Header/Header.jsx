@@ -101,7 +101,9 @@ function Header({ emprendedor, inicio, tienda, nosotros }) {
 
         <div className="nav_usuario">
           <div className="nav_usuario_icon">
-            <img src={usuario} alt="icono usuario" />
+            <Link className="nav_usuario_icon" to="/cuenta">
+              <img src={usuario} alt="icono usuario" />
+            </Link>
           </div>
           <div className="nav_usuario_text">
             <div className="nav_usuario_saludo">
