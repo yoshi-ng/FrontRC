@@ -1,10 +1,7 @@
-import "./Usuario.css";
-import axios from "axios";
-import { useState, createContext } from "react";
+/* import "./Usuario.css"; */
+import { useState } from "react";
 import ico_foto from "../../../components/assets/Icons/camara.svg";
 import punto from "../../../components/assets/Icons/punto.svg";
-import flecha_i from "../../../components/assets/Icons/clip_L.svg";
-import flecha_d from "../../../components/assets/Icons/clip_R.svg";
 
 function Usuario(formulario) {
   const [nombre, setNombre] = useState("");

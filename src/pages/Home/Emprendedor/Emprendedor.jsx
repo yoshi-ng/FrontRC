@@ -15,11 +15,11 @@ function Emprendedor() {
         <div className="emprendedor_tienda">
           <BannerEmprendedor />
           <Link
-            to="/tienda/:id"
+            to="/registrar-tienda"
             style={{ textDecoration: "none" }}
             className="btn_tienda"
           >
-            <Boton text="Abrir mi tienda" />
+            <Boton text="Registrar tienda" />
           </Link>
         </div>
 

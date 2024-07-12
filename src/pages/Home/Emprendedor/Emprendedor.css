@@ -13,8 +13,9 @@
 
 .btn_tienda {
   position: absolute;
-  top: 70%;
-  left: 50%;
+  top: 90%;
+  left: 0;
+  width: 100%;
 }
 
 .btn_producto {

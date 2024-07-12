@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import fondo1 from "../assets/Tienda/fondo_tienda.webp";
 
 import data from "../../components/assets/all_tiendas";
 import "./TiendaId.css";
@@ -13,12 +14,17 @@ function TiendaId({ id }) {
 
   return (
     <>
-      <div className="contenedor_item">
-        <div className="contenedor_texto">
-          <h2 className="nombre">{tienda.nombre}</h2>
-          <div className="detalle">
-            <p className="titulo">Descripcion de la tienda:</p>
-            <p className="descripcion">{tienda.descripcion}</p>
+      <div className="contenedor_tiendaId_item">
+        <img src={fondo1} alt="" />
+        <div className="contenedor_tiendaId_texto">
+          <h2 className="tiendaID_nombre">{tienda.nombre}</h2>
+          <div className="tiendaID_detalle">
+            <p className="tiendaID_titulo">Descripcion de la tienda:</p>
+            <p className="tiendaID_descripcion">{tienda.descripcion}</p>
+            <p className="tiendaID_titulo">Contacto:</p>
+            <p className="tiendaID_telefono">+56 9 {tienda.telefono}</p>
+            <p className="tiendaID_instagram">Instagram: {tienda.instagram}</p>
+            <p className="tiendaID_facebook">Facebook: {tienda.facebook}</p>
           </div>
         </div>
       </div>

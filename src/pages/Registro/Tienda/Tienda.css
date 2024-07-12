@@ -1,0 +1,218 @@
+.formulario {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  font-family: var(--font-titulos);
+}
+
+.primera_parte {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.foto {
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 5%;
+}
+
+.foto > img {
+  height: 250px;
+}
+
+.texto_ft {
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contenedor_nombre {
+  position: absolute;
+  height: 80px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor_nombre > p {
+  position: absolute;
+  left: 10%;
+}
+
+.descripcion {
+  margin-top: 20px;
+  position: absolute;
+  top: 55%;
+  height: 80px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dest {
+  position: absolute;
+  left: 10%;
+}
+
+.input_descripcion {
+  left: 10%;
+  top: 40%;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.input_nombre,
+.input_descripcion {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  top: 30%;
+  height: 40px;
+  width: 80%;
+}
+
+.input_nombre {
+  left: 10%;
+  top: 40%;
+}
+
+.contenedor_mdp {
+  border: 1px solid black;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.encabezado_mdp {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.metodos_pago {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mdp_t_e_izquierdo,
+.mdp_c_d_derecho {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.mdp_t_e_izquierdo div,
+.mdp_c_d_derecho div {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.mdp_t_e_izquierdo div img,
+.mdp_c_d_derecho div img {
+  margin-right: 10px;
+}
+
+.transferencia > img,
+.efectivo > img {
+  height: 15px;
+  width: 30px;
+}
+
+.credito > img,
+.debito > img {
+  height: 15px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.formulario_contacto {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  height: 450px;
+}
+
+.contenedor_contacto {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contenedor_contacto p {
+  margin-top: 10px;
+}
+
+.numero {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.ig {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.fb {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input_num {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input_ig,
+.input_fb {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
