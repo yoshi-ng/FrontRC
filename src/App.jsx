@@ -17,6 +17,7 @@ import Contacto from "./pages/Home/Contacto/Contacto";
 import Emprendedor from "./pages/Home/Emprendedor/Emprendedor";
 import RegistroProducto from "./pages/Registro/Producto/Producto";
 import RegistroTienda from "./pages/Registro/Tienda/Tienda";
+import Pagos from "./pages/Home/MediosPago/MediosPago";
 /* import RegistroUsuario from  "./pages/Registro/Usuario/Usuario"*/
 
 const url = "https://residuocreativo.duckdns.org";
@@ -55,6 +56,8 @@ function App() {
             <Route path="/preguntas-frecuentes" element={<Preguntas />}></Route>
             <Route path="/contacto" element={<Contacto />}></Route>
             <Route path="/cuenta" element={<Emprendedor />}></Route>
+            <Route path="/pagos" element={<Pagos />}></Route>
+
             <Route path="/producto/:id" element={<Producto />} />
             <Route path="/tienda/:id" element={<Tienda />} />
           </Routes>
