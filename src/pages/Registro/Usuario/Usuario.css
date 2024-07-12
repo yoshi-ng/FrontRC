@@ -1,7 +1,7 @@
 .formulario {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 45vh;
 }
 
 .primera_parte {
@@ -43,7 +43,7 @@
 }
 
 .contenedor_nombre {
-  border: 1px solid yellowgreen;
+  /* border: 1px solid yellowgreen; */
   margin-top: 20px;
   position: absolute;
   top: 35%;
@@ -59,7 +59,7 @@
 }
 
 .descripcion {
-  border: 1px solid yellowgreen;
+  /* border: 1px solid yellowgreen; */
   margin-top: 20px;
   position: absolute;
   top: 55%;
@@ -93,10 +93,11 @@
 }
 
 .contenedor_mdp {
-  border: 1px solid black;
-  padding: 20px;
+  /* border: 1px solid black; */
+  padding: 60px;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 20px;
 }
 
 .encabezado_mdp {
@@ -144,9 +145,10 @@
 }
 
 .formulario_contacto {
-  position: relative;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
 
 .contenedor_contacto {
@@ -181,7 +183,7 @@
 
 .btn_submit {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px 40px;
   background-color: #007bff;
   color: white;
   border: none;
