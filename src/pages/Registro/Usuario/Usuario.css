@@ -137,95 +137,53 @@
  */
 .contenedor_mdp {
   border: 1px solid black;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .encabezado_mdp {
   margin-bottom: 20px;
-  font-size: 15px;
+  text-align: center;
 }
 
-.mdp_t_e_izquierdo {
-  border: 1px solid green;
+.metodos_pago {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mdp_t_e_izquierdo,
+.mdp_c_d_derecho {
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  box-sizing: border-box;
+  width: 45%;
+}
+
+.mdp_t_e_izquierdo div,
+.mdp_c_d_derecho div {
+  border: 1px solid black;
   padding: 10px;
-}
-
-.transferencia > img {
-  height: 15px;
-  position: inherit;
-  width: 30px;
-  margin-left: 5px;
-}
-
-.transferencia {
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
-.transferencia > p {
-  margin: 0;
+.mdp_t_e_izquierdo div img,
+.mdp_c_d_derecho div img {
+  margin-right: 10px;
 }
 
+.transferencia > img,
 .efectivo > img {
   height: 15px;
   width: 30px;
-  margin-left: 30px;
 }
 
-.efectivo {
-  display: flex;
-  align-items: center;
-}
-.efectivo > p {
-  margin: 0;
-}
-
-.mdp_c_d_derecho {
-  border: 1px solid green;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.credito > img {
-  height: 15px;
-  width: 30px;
-  margin-right: 20px;
-}
-
-.credito {
-  display: flex;
-  align-items: center;
-}
-
-.credito > p {
-  margin: 0;
-}
-
+.credito > img,
 .debito > img {
   height: 15px;
   width: 30px;
-  margin-right: 20px;
-}
-
-.debito {
-  display: flex;
-  align-items: center;
-}
-
-.debito > p {
-  margin: 0;
+  margin-right: 10px;
 }
 
 .contenedor_contacto {

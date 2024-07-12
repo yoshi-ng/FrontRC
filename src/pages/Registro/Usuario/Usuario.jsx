@@ -65,24 +65,26 @@ function Usuario(formulario) {
               compradores
             </p>
           </div>
-          <div className="mdp_t_e_izquierdo">
-            <div className="transferencia">
-              <img src={punto} alt="Transferencia" />
-              <p>Transferencia</p>
+          <div className="metodos_pago">
+            <div className="mdp_t_e_izquierdo">
+              <div className="transferencia">
+                <img src={punto} alt="Transferencia" />
+                <p>Transferencia</p>
+              </div>
+              <div className="efectivo">
+                <img src={punto} alt="Efectivo" />
+                <p>Efectivo</p>
+              </div>
             </div>
-            <div className="efectivo">
-              <img src={punto} alt="Efectivo" />
-              <p>Efectivo</p>
-            </div>
-          </div>
-          <div className="mdp_c_d_derecho">
-            <div className="credito">
-              <img src={punto} alt="Crédito" />
-              <p>Crédito</p>
-            </div>
-            <div className="debito">
-              <img src={punto} alt="Débito" />
-              <p>Débito</p>
+            <div className="mdp_c_d_derecho">
+              <div className="credito">
+                <img src={punto} alt="Crédito" />
+                <p>Crédito</p>
+              </div>
+              <div className="debito">
+                <img src={punto} alt="Débito" />
+                <p>Débito</p>
+              </div>
             </div>
           </div>
         </div>
@@ -121,7 +123,7 @@ function Usuario(formulario) {
                 name="instagram"
                 type="text"
                 value={instagram}
-                placeholder="Escribe el enlace de la cuenta de instagram de tu tienda"
+                placeholder="Escribe el enlace de la cuenta de Instagram de tu tienda."
                 onChange={(e) => setInstagram(e.target.value)}
               />
             </div>
@@ -133,7 +135,7 @@ function Usuario(formulario) {
                 name="facebook"
                 type="text"
                 value={facebook}
-                placeholder="Escribe la página facebook de tu tienda."
+                placeholder="Escribe la página de Facebook de tu tienda."
                 onChange={(e) => setFacebook(e.target.value)}
               />
             </div>
