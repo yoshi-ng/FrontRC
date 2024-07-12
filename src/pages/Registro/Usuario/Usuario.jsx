@@ -16,68 +16,76 @@ function Usuario(formulario) {
   return (
     <>
       <div>
-        <h1 className="encabezado">Información de tu tienda</h1>
-        <div className="foto">
-          <img src={ico_foto} alt="" />
-          <p className="texto_ft">Foto tienda</p>
-        </div>
+        <div className="primera_parte">
+          <h1 className="info">Información de tu tienda</h1>
+          <div className="foto">
+            <img src={ico_foto} alt="" />
+            <p className="texto_ft">Foto tienda</p>
+          </div>
 
-        <form
-          className="formulario"
-          onSubmit={() => {
-            handleSubmit();
-          }}
-        >
-          <div className="contenedor_nombre" style={{ marginTop: "20px" }}>
-            <p>Nombre de tu tienda</p>
-            <input
-              className="input input_nombre"
-              name="nombre"
-              type="text"
-              value={nombre}
-              placeholder="Escribe el nombre de tu tienda"
-              onChange={(e) => setNombre(e.target.value)}
-            />
-          </div>
-          <div className="descripcion" style={{ marginTop: "20px" }}>
-            <p className="dest">Descripción de la tienda</p>
-            <input
-              className="input input_descripcion"
-              name="descripcion"
-              type="text"
-              value={descripcion}
-              placeholder="Escribe la descripcion de tu tienda"
-              onChange={(e) => setDescripcion(e.target.value)}
-            />
-          </div>
-        </form>
+          <form
+            className="formulario"
+            onSubmit={() => {
+              handleSubmit();
+            }}
+          >
+            <div className="contenedor_nombre" style={{ marginTop: "20px" }}>
+              <p>Nombre de tu tienda</p>
+              <input
+                className="input input_nombre"
+                name="nombre"
+                type="text"
+                value={nombre}
+                placeholder="Escribe el nombre de tu tienda"
+                onChange={(e) => setNombre(e.target.value)}
+              />
+            </div>
+            <div className="descripcion" style={{ marginTop: "20px" }}>
+              <p className="dest">Descripción de la tienda</p>
+              <input
+                className="input input_descripcion"
+                name="descripcion"
+                type="text"
+                value={descripcion}
+                placeholder="Escribe la descripcion de tu tienda"
+                onChange={(e) => setDescripcion(e.target.value)}
+              />
+            </div>
+          </form>
+        </div>
         {/* <div>
           <h2>Nombre</h2>
         </div>
         <div className="Descripcion">Descripción</div> */}
-
-        <section className="contenedor_mdp">
-          <h2 className="mdp">Métodos de pago</h2>
-          <p className="info_mdp">
-            Selecciona todos los métodos de pago que aceptes de los compradores
-          </p>
-          <div className="transferencia">
-            <img src={punto} alt="Transferencia" />
-            <p>Transferencia</p>
+        <div className="contenedor_mdp">
+          <div className="encabezado_mdp">
+            <h2>Métodos de pago</h2>
+            <p>
+              Selecciona todos los métodos de pago que aceptes de los
+              compradores
+            </p>
           </div>
-          <div className="efectivo">
-            <img src={punto} alt="Efectivo" />
-            <p>Efectivo</p>
+          <div className="mdp_t_e_izquierdo">
+            <div className="transferencia">
+              <img src={punto} alt="Transferencia" />
+              <p>Transferencia</p>
+            </div>
+            <div className="efectivo">
+              <img src={punto} alt="Efectivo" />
+              <p>Efectivo</p>
+            </div>
           </div>
-          <div className="credito">
-            <img src={punto} alt="Crédito" />
-            <p>Crédito</p>
+          <div className="mdp_c_d_derecho">
+            <div className="credito">
+              <img src={punto} alt="Crédito" />
+              <p>Crédito</p>
+            </div>
+            <div className="debito">
+              <img src={punto} alt="Débito" />
+              <p>Débito</p>
+            </div>
           </div>
-          <div className="debito">
-            <img src={punto} alt="Débito" />
-            <p>Débito</p>
-          </div>
-        </section>
+        </div>
 
         <form
           className="formulario"
@@ -85,67 +93,56 @@ function Usuario(formulario) {
             handleSubmit();
           }}
         >
-          <div className="contenedor_conctacto">
-            <h2 className="contacto">Contacto</h2>
-            <p className="info_contacto">
-              Añade la información de contacto por donde los clientes te
-              contactarán para comprar tus productos.
-            </p>
-          </div>
-          <h3>Número</h3>
-          <div className="numero">
-            <input
-              className="input input_num"
-              name="numero"
-              type="number"
-              value={numero}
-              onChange={(e) => setNumero(e.target.value)}
-            />
-            {numero}
-          </div>
+          <div className="global_contacto">
+            <div className="contenedor_conctacto">
+              <h2 className="contacto">Contacto</h2>
+              <p className="info_contacto">
+                Añade la información de contacto por donde los clientes te
+                contactarán para comprar tus productos.
+              </p>
+            </div>
+            <div className="global_contacto">
+              <h3 className="texto_numero">Número</h3>
+              <div className="numero">
+                <input
+                  className="input input_num"
+                  name="numero"
+                  type="number"
+                  value={numero}
+                  placeholder="Ingresa el número telefónico por el cual los compradores se comunicarán contigo. "
+                  onChange={(e) => setNumero(e.target.value)}
+                />
+              </div>
+            </div>
+            <h3>Instagram</h3>
+            <div className="ig">
+              <input
+                className="input input_ig"
+                name="instagram"
+                type="text"
+                value={instagram}
+                placeholder="Escribe el enlace de la cuenta de instagram de tu tienda"
+                onChange={(e) => setInstagram(e.target.value)}
+              />
+            </div>
 
-          <h3>Instagram</h3>
-          <div className="ig">
-            <input
-              className="input input_ig"
-              name="instagram"
-              type="text"
-              value={instagram}
-              onChange={(e) => setInstagram(e.target.value)}
-            />
-            {instagram}
-          </div>
+            <h3>Facebook</h3>
+            <div className="fb">
+              <input
+                className="input input_fb"
+                name="facebook"
+                type="text"
+                value={facebook}
+                placeholder="Escribe la página facebook de tu tienda."
+                onChange={(e) => setFacebook(e.target.value)}
+              />
+            </div>
 
-          <h3>Facebook</h3>
-          <div className="fb">
-            <input
-              className="input input_fb"
-              name="facebook"
-              type="text"
-              value={facebook}
-              onChange={(e) => setFacebook(e.target.value)}
-            />
-            {facebook}
-          </div>
-
-          <div>
-            <input className="btn_submit" type="submit"></input>
-          </div>
-        </form>
-        <div>
-          <div className="contenedor_catalogo">
-            <h2 className="encabezado_catalogo">
-              Catálogo de productos publicados
-            </h2>
-            <div className="catalogo">
-              <img className="fi" src={flecha_i} alt="" />
-
-              {/* como poner las fotos para que corran */}
-
-              <img src={flecha_d} alt="" />
+            <div>
+              <input className="btn_submit" type="submit"></input>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </>
   );
