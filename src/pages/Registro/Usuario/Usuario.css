@@ -1,9 +1,8 @@
 .formulario {
   display: flex;
   justify-content: center;
-  height: 45vh;
   height: 50vh;
-  font-family: var(--font-titulos);
+  width: 100%;
 }
 
 .primera_parte {

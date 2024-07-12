@@ -1,4 +1,4 @@
-/* import "./Usuario.css"; */
+import "./Usuario.css";
 import { useState } from "react";
 import ico_foto from "../../../components/assets/Icons/camara.svg";
 import punto from "../../../components/assets/Icons/punto.svg";
