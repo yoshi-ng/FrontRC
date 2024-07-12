@@ -156,7 +156,7 @@
 .mdp_c_d_derecho {
   display: flex;
   flex-direction: column;
-  width: 45%; /* Ajusta este valor según tus necesidades */
+  width: 45%;
 }
 
 .mdp_t_e_izquierdo div,

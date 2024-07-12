@@ -123,7 +123,7 @@ function Usuario(formulario) {
                 name="instagram"
                 type="text"
                 value={instagram}
-                placeholder="Escribe el enlace de la cuenta de instagram de tu tienda"
+                placeholder="Escribe el enlace de la cuenta de Instagram de tu tienda."
                 onChange={(e) => setInstagram(e.target.value)}
               />
             </div>
@@ -135,7 +135,7 @@ function Usuario(formulario) {
                 name="facebook"
                 type="text"
                 value={facebook}
-                placeholder="Escribe la página facebook de tu tienda."
+                placeholder="Escribe la página de Facebook de tu tienda."
                 onChange={(e) => setFacebook(e.target.value)}
               />
             </div>
