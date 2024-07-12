@@ -1,107 +1,110 @@
-.section__padding {
-  padding: 1rem;
+:root {
+  --color-primary: #009846;
+  --color-secondary: #2196f3;
+  --color-text: #333333;
+  --color-text-light: #ffffff;
+  --color-background: #e8f5e9;
+  --font-main: "Arial", sans-serif;
 }
+
 .footer {
-  background-color: var(--backgound-footer);
+  background-color: var(--color-primary);
   font-family: var(--font-titulos);
-  border-bottom: 20px solid var(--color-verde-icono);
+}
+
+h4 {
+  color: var(--font-color-claro);
+}
+
+.a > p {
+  color: var(--font-color-claro);
 }
 
 .sb__footer-links {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .sb__footer-links-div {
-  width: 150px;
+  flex: 1;
+  min-width: 200px;
   margin: 1rem;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  color: var(--font-color-claro);
+}
+
+.sb__footer-links-div h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.sb__footer-links-div h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--font-color-oscuro);
 }
 
 .a {
   color: var(--font-color-claro);
-  font-size: 14px;
-}
-.social {
-  display: flex;
-  flex-direction: row;
-}
-.social img {
-  width: 80%;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-.sb__footer-links-div h4 {
+.a:hover {
+  color: var(--font-color-oscuro);
+}
+
+.social {
   display: flex;
-  font-size: 17px;
-  line-height: 17px;
-  margin-bottom: 0.9rem;
+  gap: 1rem;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
 }
 
 .sb__footer-links-div p {
   font-size: 15px;
   line-height: 15px;
-  margin: 0.2rem 0;
+  margin: 0.5rem 0;
   cursor: pointer;
 }
 
 .sb__footer__abajo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-hr {
-  color: var(--font-color-claro) !important;
-  width: 100%;
-}
-.sb__footer.copyright {
-  font-size: 20px;
-  line-height: 20px;
-  color: var(--font-color-claro);
-  font-weight: 600;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+  text-align: center;
 }
 
 .sb__footer__copyright p {
-  color: var(--font-color-claro);
+  font-size: 0.9rem;
 }
 
-@media screen and (max-width: 850px) {
-  .sb__footer-heading h1 {
-    font-size: 44px;
-    line-height: 50px;
+@media screen and (max-width: 768px) {
+  .sb__footer-links {
+    flex-direction: column;
   }
-}
 
-@media screen and (max-width: 550px) {
-  .sb__footer-heading h1 {
-    font-size: 32px;
-    line-height: 42px;
-  }
-  .sb__footer-links div {
+  .sb__footer-links-div {
     margin: 1rem 0;
   }
-
-  .sb__footer-btn p {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .sb__footer__abajo {
-    flex-direction: column;
-    justify-content: left;
-  }
 }
 
-@media screen and (max-width: 400px) {
-  .sb__footer-heading h1 {
-    font-size: 27px;
-    line-height: 38px;
-  }
+/* Añadir iconos de reciclaje */
+.sb__footer-links-div h4::before {
+  content: "♻️";
+  margin-right: 0.5rem;
 }

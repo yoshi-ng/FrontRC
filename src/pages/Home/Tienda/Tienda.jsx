@@ -7,11 +7,11 @@ import Cards from "../../../components/Cards/Cards";
 import CardTienda from "../../../components/CardTienda/CardTienda";
 
 const clientProducto = axios.create({
-  baseURL: "http://localhost:8080/api/producto/lista",
+  baseURL: "https://residuocreativo.duckdns.org/api/producto/lista",
 });
 
 const clientTienda = axios.create({
-  baseURL: "http://localhost:8080/api/tienda/lista",
+  baseURL: "https://residuocreativo.duckdns.org/api/tienda/lista",
 });
 
 function Tienda() {

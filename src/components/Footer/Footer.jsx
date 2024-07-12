@@ -43,7 +43,7 @@ function Footer({ nosotros, contacto, preguntas }) {
           <div className="sb__footer-links-div">
             <h4>Medios de pago</h4>
             <a className="a" href="#">
-              <p>Revisa los medios de pago disponibles</p>
+              <p className="a">Revisa los medios de pago disponibles</p>
             </a>
           </div>
           <div className="sb__footer-links-div">

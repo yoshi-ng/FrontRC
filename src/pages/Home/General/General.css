@@ -1,0 +1,9 @@
+.contenedor_homeGeneral_banner1,
+.contenedor_homeGeneral_banner2,
+.contenedor_homeGeneral_banner3,
+.contenedor_homeGeneral_banner4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

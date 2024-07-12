@@ -3,9 +3,11 @@
   width: 90%;
   margin: 10px auto;
   padding: 20px;
-  background-color: var(--background-text);
+  /*   background-color: var(--background-text); */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-image: url("../../../components/assets/PreguntasFrecuentes/fondo1.jpg");
 }
 
 .Preguntas-titulo {
