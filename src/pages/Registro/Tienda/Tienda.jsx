@@ -4,7 +4,7 @@ import ico_foto from "../../../components/assets/Icons/camara.svg";
 import punto from "../../../components/assets/Icons/punto.svg";
 import Boton from "../../../components/Botones/Boton";
 
-function Tienda(formulario) {
+function Tienda() {
   const [nombre, setNombre] = useState("");
   const [descripcion, setDescripcion] = useState("");
   const [numero, setNumero] = useState(0);
