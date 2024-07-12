@@ -1,7 +1,9 @@
+import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { Container } from "@mui/material";
+import axios from "axios";
 
 import HomeGeneral from "./pages/Home/General/General";
 import Tiendas from "./pages/Home/Tienda/Tienda";
@@ -15,7 +17,14 @@ import Contacto from "./pages/Home/Contacto/Contacto";
 import Emprendedor from "./pages/Home/Emprendedor/Emprendedor";
 import RegistroProducto from "./pages/Registro/Producto/Producto";
 
+const url = "https://residuocreativo.duckdns.org";
+
 function App() {
+  useEffect(() => {
+    axios.get(`${url}/api/producto/lista`).then((response) => {
+      console.log(response.data);
+    });
+  }, []);
   return (
     <>
       <Header
