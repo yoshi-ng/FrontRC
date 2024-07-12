@@ -65,24 +65,26 @@ function Usuario(formulario) {
               compradores
             </p>
           </div>
-          <div className="mdp_t_e_izquierdo">
-            <div className="transferencia">
-              <img src={punto} alt="Transferencia" />
-              <p>Transferencia</p>
+          <div className="metodos_pago">
+            <div className="mdp_t_e_izquierdo">
+              <div className="transferencia">
+                <img src={punto} alt="Transferencia" />
+                <p>Transferencia</p>
+              </div>
+              <div className="efectivo">
+                <img src={punto} alt="Efectivo" />
+                <p>Efectivo</p>
+              </div>
             </div>
-            <div className="efectivo">
-              <img src={punto} alt="Efectivo" />
-              <p>Efectivo</p>
-            </div>
-          </div>
-          <div className="mdp_c_d_derecho">
-            <div className="credito">
-              <img src={punto} alt="Crédito" />
-              <p>Crédito</p>
-            </div>
-            <div className="debito">
-              <img src={punto} alt="Débito" />
-              <p>Débito</p>
+            <div className="mdp_c_d_derecho">
+              <div className="credito">
+                <img src={punto} alt="Crédito" />
+                <p>Crédito</p>
+              </div>
+              <div className="debito">
+                <img src={punto} alt="Débito" />
+                <p>Débito</p>
+              </div>
             </div>
           </div>
         </div>
