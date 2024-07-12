@@ -1,4 +1,4 @@
-/* import "./Usuario.css"; */
+import "./Usuario.css";
 import { useState } from "react";
 import ico_foto from "../../../components/assets/Icons/camara.svg";
 import punto from "../../../components/assets/Icons/punto.svg";
@@ -14,7 +14,7 @@ function Usuario(formulario) {
     <>
       <div>
         <div className="primera_parte">
-          <h1 className="info">Información de tu tienda</h1>
+          <h1 className="info">INFORMACION DE TU TIENDA</h1>
           <div className="foto">
             <img src={ico_foto} alt="" />
             <p className="texto_ft">Foto tienda</p>
