@@ -12,24 +12,24 @@ function Tienda(formulario) {
   const [facebook, setFacebook] = useState("");
   return (
     <>
-      <div>
-        <div className="primera_parte">
-          <h1 className="info">Información de tu tienda</h1>
-          <div className="foto">
+      <div className="contenedor_registro_tienda">
+        <div className="registro_tienda_primeraParte">
+          <h1 className="registro_tienda_titulo">Información de tu tienda</h1>
+          <div className="registro_tienda_foto">
             <img src={ico_foto} alt="" />
-            <p className="texto_ft">Foto tienda</p>
+            <p className="tienda_foto_titulo">Foto tienda</p>
           </div>
 
           <form
-            className="formulario"
+            className="registro_tienda_formulario"
             onSubmit={() => {
               handleSubmit();
             }}
           >
-            <div className="contenedor_nombre" style={{ marginTop: "20px" }}>
+            <div className="contenedor_tienda_nombre">
               <p>Nombre de tu tienda</p>
               <input
-                className="input input_nombre"
+                className="inputTienda inputNombre"
                 name="nombre"
                 type="text"
                 value={nombre}
@@ -37,10 +37,10 @@ function Tienda(formulario) {
                 onChange={(e) => setNombre(e.target.value)}
               />
             </div>
-            <div className="descripcion" style={{ marginTop: "20px" }}>
-              <p className="dest">Descripción de la tienda</p>
+            <div className="contenedor_tienda_descripcion">
+              <p>Descripción de la tienda</p>
               <input
-                className="input input_descripcion"
+                className="inputTienda input_tienda_descripcion"
                 name="descripcion"
                 type="text"
                 value={descripcion}
@@ -54,31 +54,31 @@ function Tienda(formulario) {
       <h2>Nombre</h2>
     </div>
     <div className="Descripcion">Descripción</div> */}
-        <div className="contenedor_mdp">
-          <div className="encabezado_mdp">
+        <div className="contenedor_registro_tienda_pagos">
+          <div className="tienda_pagos_titulo">
             <h2>Métodos de pago</h2>
             <p>
               Selecciona todos los métodos de pago que aceptes de los
               compradores
             </p>
           </div>
-          <div className="metodos_pago">
-            <div className="mdp_t_e_izquierdo">
-              <div className="transferencia">
+          <div className="tienda_metodos_pago">
+            <div className="tienda_pagos_left">
+              <div className="pago_transferencia">
                 <img src={punto} alt="Transferencia" />
                 <p>Transferencia</p>
               </div>
-              <div className="efectivo">
+              <div className="pago_efectivo">
                 <img src={punto} alt="Efectivo" />
                 <p>Efectivo</p>
               </div>
             </div>
-            <div className="mdp_c_d_derecho">
-              <div className="credito">
+            <div className="tienda_pagos_right">
+              <div className="pago_credito">
                 <img src={punto} alt="Crédito" />
                 <p>Crédito</p>
               </div>
-              <div className="debito">
+              <div className="pago_debito">
                 <img src={punto} alt="Débito" />
                 <p>Débito</p>
               </div>
@@ -87,23 +87,23 @@ function Tienda(formulario) {
         </div>
 
         <form
-          className="formulario_contacto"
+          className="formulario_contacto_tienda"
           onSubmit={() => {
             handleSubmit();
           }}
         >
-          <div className="global_contacto">
-            <div className="contenedor_contacto">
-              <h2 className="contacto">Contacto</h2>
-              <p className="info_contacto">
+          <div className="container_tienda_contacto">
+            <div className="tienda_contacto_cabecera">
+              <h2 className="tienda_contacto_titulo">Contacto</h2>
+              <p className="tienda_contacto_descripcion">
                 Añade la información de contacto por donde los clientes te
                 contactarán para comprar tus productos.
               </p>
             </div>
-            <div className="numero">
-              <h3 className="texto_numero">Número</h3>
+            <div className="registro_tienda_numero">
+              <h3 className="tienda_inputNumero_titulo">Número</h3>
               <input
-                className="input input_num"
+                className="inputTienda inputNumero"
                 name="numero"
                 type="number"
                 value={numero}
@@ -112,10 +112,10 @@ function Tienda(formulario) {
               />
             </div>
 
-            <div className="ig">
+            <div className="tienda_ig">
               <h3>Instagram</h3>
               <input
-                className="input input_ig"
+                className="inputTienda inputIg"
                 name="instagram"
                 type="text"
                 value={instagram}
@@ -123,10 +123,10 @@ function Tienda(formulario) {
                 onChange={(e) => setInstagram(e.target.value)}
               />
             </div>
-            <div className="fb">
+            <div className="tienda_fb">
               <h3>Facebook</h3>
               <input
-                className="input input_fb"
+                className="inputTienda inputFb"
                 name="facebook"
                 type="text"
                 value={facebook}
@@ -135,7 +135,7 @@ function Tienda(formulario) {
               />
             </div>
 
-            <div className="btn">
+            <div className="btnRegistrarTienda">
               <Boton text="Registrar"></Boton>
             </div>
           </div>

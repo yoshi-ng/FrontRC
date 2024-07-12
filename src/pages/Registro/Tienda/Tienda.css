@@ -1,60 +1,63 @@
-.formulario {
-  display: flex;
-  justify-content: center;
-  height: 50vh;
+.contenedor_registro_tienda {
+  position: relative;
   font-family: var(--font-titulos);
+  color: var(--font-color-oscuro);
 }
 
-.primera_parte {
+.registro_tienda_primeraParte {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 100%;
-  margin: 0;
-  padding: 20px;
+  margin: 20px 0;
+  padding: 0;
 }
 
-.info {
-  margin-bottom: 20px;
+.registro_tienda_titulo {
+  font-size: 34px;
+  margin: 20px 0;
 }
 
-.foto {
+.registro_tienda_foto {
   position: absolute;
-  top: 10%;
+  top: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  left: 5%;
+  left: 8%;
 }
 
-.foto > img {
-  height: 250px;
+.registro_tienda_foto > img {
+  height: 180px;
 }
 
-.texto_ft {
+.tienda_foto_titulo {
   margin: 20px 0;
   font-size: 20px;
   text-align: center;
 }
 
-.contenedor_nombre {
+.registro_tienda_formulario {
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+}
+
+.contenedor_tienda_nombre {
   position: absolute;
   height: 80px;
   width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.contenedor_nombre > p {
-  position: absolute;
-  left: 10%;
+.contenedor_tienda_nombre > p {
+  margin: 8px 0;
+  text-align: left;
 }
 
-.descripcion {
+.contenedor_tienda_descripcion {
   margin-top: 20px;
   position: absolute;
   top: 55%;
@@ -67,9 +70,10 @@
   margin-top: 10px;
 }
 
-.dest {
+.contenedor_tienda_descripcion > p {
   position: absolute;
-  left: 10%;
+  text-align: left;
+  left: 0;
 }
 
 .input_descripcion {
@@ -77,15 +81,15 @@
   top: 40%;
 }
 
-.input {
+.inputTienda {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
 }
 
-.input_nombre,
-.input_descripcion {
+.input_tienda_nombre,
+.input_tienda_descripcion {
   position: absolute;
   width: 100%;
   padding: 10px;
@@ -95,37 +99,36 @@
   width: 80%;
 }
 
-.input_nombre {
+.input_tienda_nombre {
   left: 10%;
   top: 40%;
 }
 
-.contenedor_mdp {
-  border: 1px solid black;
+.contenedor_registro_tienda_pagos {
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
 }
 
-.encabezado_mdp {
+.tienda_pagos_titulo {
   margin-bottom: 20px;
   text-align: center;
 }
 
-.metodos_pago {
+.tienda_metodos_pago {
   display: flex;
   justify-content: space-between;
 }
 
-.mdp_t_e_izquierdo,
-.mdp_c_d_derecho {
+.tienda_pagos_left,
+.tienda_pagos_right {
   display: flex;
   flex-direction: column;
   width: 45%;
 }
 
-.mdp_t_e_izquierdo div,
-.mdp_c_d_derecho div {
+.tienda_pagos_left div,
+.tienda_pagos_right div {
   border: 1px solid black;
   padding: 10px;
   margin-bottom: 10px;
@@ -133,25 +136,25 @@
   align-items: center;
 }
 
-.mdp_t_e_izquierdo div img,
-.mdp_c_d_derecho div img {
+.tienda_pagos_left div img,
+.tienda_pagos_right div img {
   margin-right: 10px;
 }
 
-.transferencia > img,
-.efectivo > img {
+.pago_transferencia > img,
+.pago_efectivo > img {
   height: 15px;
   width: 30px;
 }
 
-.credito > img,
-.debito > img {
+.pago_credito > img,
+.pago_debito > img {
   height: 15px;
   width: 30px;
   margin-right: 10px;
 }
 
-.formulario_contacto {
+.formulario_contacto_tienda {
   position: relative;
   display: flex;
   justify-content: center;
@@ -160,31 +163,26 @@
   height: 450px;
 }
 
-.contenedor_contacto {
+.tienda_contacto_cabecera {
   margin-top: 20px;
   text-align: center;
 }
 
-.contenedor_contacto p {
+.tienda_contacto_cabecera > p {
   margin-top: 10px;
 }
 
-.numero {
-  margin: 20px 0px;
-  text-align: center;
-}
-
-.ig {
+.tienda_ig {
   margin: 20px 0;
   text-align: center;
 }
 
-.fb {
+.tienda_fb {
   margin: 20px 0;
   text-align: center;
 }
 
-.btn {
+.btnRegistrarTienda {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,7 +191,7 @@
   left: 50%;
 }
 
-.input {
+.inputTienda {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -201,16 +199,17 @@
   border-radius: 4px;
 }
 
-.input_num {
+.inputNumero {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 20px 0px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  text-align: center;
 }
 
-.input_ig,
-.input_fb {
+.inputIg,
+.inputFb {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
