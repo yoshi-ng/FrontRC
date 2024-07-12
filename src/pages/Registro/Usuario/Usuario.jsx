@@ -90,34 +90,33 @@ function Usuario(formulario) {
         </div>
 
         <form
-          className="formulario"
+          className="formulario_contacto"
           onSubmit={() => {
             handleSubmit();
           }}
         >
           <div className="global_contacto">
-            <div className="contenedor_conctacto">
+            <div className="contenedor_contacto">
               <h2 className="contacto">Contacto</h2>
               <p className="info_contacto">
                 Añade la información de contacto por donde los clientes te
                 contactarán para comprar tus productos.
               </p>
             </div>
-            <div className="global_contacto">
+            <div className="numero">
               <h3 className="texto_numero">Número</h3>
-              <div className="numero">
-                <input
-                  className="input input_num"
-                  name="numero"
-                  type="number"
-                  value={numero}
-                  placeholder="Ingresa el número telefónico por el cual los compradores se comunicarán contigo. "
-                  onChange={(e) => setNumero(e.target.value)}
-                />
-              </div>
+              <input
+                className="input input_num"
+                name="numero"
+                type="number"
+                value={numero}
+                placeholder="Ingresa el número telefónico por el cual los compradores se comunicarán contigo. "
+                onChange={(e) => setNumero(e.target.value)}
+              />
             </div>
-            <h3>Instagram</h3>
+
             <div className="ig">
+              <h3>Instagram</h3>
               <input
                 className="input input_ig"
                 name="instagram"
@@ -127,9 +126,8 @@ function Usuario(formulario) {
                 onChange={(e) => setInstagram(e.target.value)}
               />
             </div>
-
-            <h3>Facebook</h3>
             <div className="fb">
+              <h3>Facebook</h3>
               <input
                 className="input input_fb"
                 name="facebook"
@@ -140,7 +138,7 @@ function Usuario(formulario) {
               />
             </div>
 
-            <div>
+            <div className="btn">
               <input className="btn_submit" type="submit"></input>
             </div>
           </div>

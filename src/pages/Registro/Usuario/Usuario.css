@@ -92,49 +92,6 @@
   width: 80%;
 }
 
-/* 
-
-.encabezado {
-  text-align: center;
-  font-size: 22px;
-}
-
-
-
-.contenedor_nombre > p {
-  position: absolute;
-  top: 0;
-}
-
-.input {
-  border-radius: 5px;
-  border: 1px solid gray;
-  margin: 10px;
-}
-
-.input_nombre {
-  border: 1px solid black;
-  position: absolute;
-  top: 30%;
-  height: 30px;
-  width: 80%;
-}
-
-.descripcion {
-  border: 1px solid red;
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  height: 80px;
-  width: 480px;
-}
-
-.dest {
-  position: absolute;
-  top: 0;
-}
-
- */
 .contenedor_mdp {
   border: 1px solid black;
   padding: 20px;
@@ -186,40 +143,46 @@
   margin-right: 10px;
 }
 
-.contenedor_contacto {
+/* .contenedor_contacto {
   border: 1px solid black;
   position: relative;
   height: 200px;
+} */
+
+.formulario_contacto {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
 }
 
-.formulario {
+.contenedor_contacto {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contenedor_contacto p {
+  margin-top: 10px;
+}
+
+.numero {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.ig {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.fb {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
-}
-
-.global_contacto {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-}
-
-.contenedor_conctacto {
-  margin-bottom: 20px;
-}
-
-.texto_numero,
-h3 {
-  margin-top: 20px;
-}
-
-.numero,
-.ig,
-.fb {
-  margin-bottom: 20px;
 }
 
 .btn_submit {
