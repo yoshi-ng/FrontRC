@@ -18,7 +18,6 @@ function InicioSesion() {
           </div>
           <div className="Olvido_contraseña">
             <label htmlFor="">
-              {" "}
               <input type="checkbox" />
               Guardar Contraseña
             </label>

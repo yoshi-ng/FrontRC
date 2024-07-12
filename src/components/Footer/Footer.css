@@ -13,7 +13,11 @@
 }
 
 h4 {
-  color: #ffffff;
+  color: var(--font-color-claro);
+}
+
+.a > p {
+  color: var(--font-color-claro);
 }
 
 .sb__footer-links {
@@ -45,11 +49,11 @@ h4 {
   bottom: 0;
   width: 50px;
   height: 2px;
-  background-color: var(--color-secondary);
+  background-color: var(--font-color-oscuro);
 }
 
 .a {
-  color: var(--color-text-light);
+  color: var(--font-color-claro);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s ease;
@@ -58,7 +62,7 @@ h4 {
 }
 
 .a:hover {
-  color: var(--color-secondary);
+  color: var(--font-color-oscuro);
 }
 
 .social {

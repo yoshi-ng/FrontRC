@@ -33,7 +33,7 @@ function Emprendedor() {
           <BannerRProducto />
 
           <Link
-            className="btn btn_producto"
+            className="btn btn_Registroproducto"
             to="/registro-producto"
             style={{ textDecoration: "none" }}
           >

@@ -18,8 +18,8 @@
   width: 100%;
 }
 
-.btn_producto {
+.btn_Registroproducto {
   position: absolute;
-  bottom: 10%;
+  top: 50%;
   left: 50%;
 }

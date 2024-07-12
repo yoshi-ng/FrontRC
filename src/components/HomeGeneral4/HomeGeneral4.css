@@ -1,0 +1,25 @@
+.homeGeneral_banner4 {
+  height: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.homeGeneral_banner4_imagen {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 60px;
+}
+
+.homeGeneral_banner4_contenido {
+  font-family: var(--font-titulos);
+  color: var(--font-color-oscuro);
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+}
